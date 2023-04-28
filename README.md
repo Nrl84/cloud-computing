@@ -1,4 +1,4 @@
-# cloud-computing-cs-643
+# DEVELOPING PARALLEL MACHINE LEARNING APPLICATIONS USING AMAZON AWS CLOUD PLATFORM.
 welcome lol
 Introduction:
 The purpose of this report is to provide a detailed description of the development process of the wine quality prediction ML model in Spark over AWS. This report will cover the dataset used, the model implementation, the Docker container setup, and the instructions to set up and run the cloud environment for model training and application prediction.
@@ -16,80 +16,15 @@ To set up the cloud environment for model training and application prediction, t
 
 Sign in using AWS Credentials by going on to the link https://console.aws.amazon.com/ec2/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Go to EC2 dashboard and click on Launch Instance
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 In Name enter a name, we will use “worker”.
 
-
-
-
 In Application and OS Images , under Quick Start , select Ubuntu
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Under Key pair ( login ) , create a new Key pair and save it in your PC.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Under Summary make the number of instances to 4. 
-
-
-
-
 
 
 Four EC2 instances were launched in the AWS cloud platform.
@@ -98,20 +33,6 @@ Four EC2 instances were launched in the AWS cloud platform.
 
 Please rename the instances as per your convenience.
 Now we will configure each Ec2 instance to setup our spark cluster. Now download the following two software
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 WinSCP							PuTTY
 Now open PuTTy and configure four profiles for easy SSH to the EC2 instances.
@@ -123,27 +44,12 @@ Amazon-Node1
 Amazon-Node2
 Amazon-Node3
 
-
-
-
-
-
-
-
-
 Now we will SSH into each machine and install spark using the following commands,
-
-
  
 The home directory would look like this 
 
 
-
-
 Now lets configure the environment variables , enter the following command
-
-
-
 
 
 Add the following lines at the end of the file
